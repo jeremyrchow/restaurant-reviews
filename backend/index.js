@@ -1,4 +1,4 @@
-import app from ".server.js"
+import app from "./server.js"
 import mongodb from "mongodb"
 import dotenv from "dotenv"
 dotenv.config()
@@ -8,13 +8,13 @@ const port = process.env.Port || 800
 MongoClient.connect(
   process.env.RESTREVIEWS_DB_URI,
   {
-    poolSize: 50, /* total connections */
+    maxPoolSize: 50, /* total connections */
     wtimeout: 2500,
-    useNewUrlParse: true
+    useNewUrlParser: true
   }
 )
 .catch(err => {
-  console.err(err.stack)
+  console.error(err.stack)
   process.exit(1)
 })
 .then(async client => {
