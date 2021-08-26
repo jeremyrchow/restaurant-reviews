@@ -5,6 +5,10 @@
 Issue with css on restaurants page
 
 ### To start backend:
-Start by cd'ing to backend directory
+Cd to backend directory
 
 `nodemon server`
+
+### to start frontend
+Cd to frontend directory
+`npm start`

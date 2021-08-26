@@ -158,7 +158,6 @@ function RestaurantsList() {
           )
         })}
       </div>
-      Restaurants
     </div>
   )
 }
